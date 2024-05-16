@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed 4 Imagens</title>
+</head>
+
+<style>
+    .impetus-row {
+
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+
+
+
+    }
+
+    .imp-wrapper {
+
+        flex-wrap: wrap;
+
+    }
+
+    .impetus-image {
+
+        width: 37vh;
+        aspect-ratio: 1;
+        background-color: aliceblue;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: 0.7s;
+
+    }
+
+    .impetus-image:hover {
+
+        transform: scale(102%);
+        cursor: pointer;
+        text-decoration: none;
+
+    }
+
+    .impetus-image img {
+
+        width: 100%;
+        position: relative;
+        bottom: 35px;
+
+        z-index: 2;
+    }
+
+    .description-impetus-images {
+
+
+        position: relative;
+        display: flex;
+        z-index: 3;
+        top: 42%;
+        justify-content: center;
+        height: auto;
+        align-content: center;
+        font-family: 'Montserrat';
+        color: white;
+        font-size: 20px;
+
+
+
+    }
+
+    .permalink {
+
+        text-decoration: none;
+    }
+</style>
+
+<body>
+
+
+    <div class="impetus-row imp-wrapper">
+
+        <a class="permalink" href="https://www.impetusunderwear.com/underwear-essentials">
+            <div class="impetus-image">
+                <span class="description-impetus-images">Underwear</span>
+                <img src="https://1742632032.rsc.cdn77.org/temp/1712575183_fadb03918dafe1bf7f4e488834d06ea2.jpg">
+            </div>
+        </a>
+
+        <a class="permalink" href="https://www.impetusunderwear.com/t-shirts-essentials">
+            <div class="impetus-image">
+                <span class="description-impetus-images">T-Shirts</span>
+                <img src="https://1742632032.rsc.cdn77.org/temp/1712313260_17d7527b9e3cb01e3731474562c0e1bb.jpg">
+            </div>
+        </a>
+
+        <a class="permalink" href="https://www.impetusunderwear.com/nightwear-essentials">
+            <div class="impetus-image">
+                <span class="description-impetus-images">Nightwear</span>
+                <img src="https://1742632032.rsc.cdn77.org/temp/1712576668_8ed15eb3e7b15934a267e7dac8661034.jpg">
+            </div>
+        </a>
+
+
+        <a class="permalink" href="https://www.impetusunderwear.com/baselayers-essentials">
+            <div class="impetus-image">
+                <span class="description-impetus-images">Base Layers</span>
+                <img src="https://1742632032.rsc.cdn77.org/temp/1712332853_9a931e75bdf1591b3578838b33f9b764.jpg">
+            </div>
+        </a>
+
+    </div>
+
+
+
+
+</body>
+
+</html>

@@ -6,7 +6,7 @@
 --font-size:clamp(14px, 20vh , 55px);
 --subtitle-size:clamp(12px, 12vh , 40px);
 --type-color-white: white;
-
+--font-size-mobile:16px;
 
 }
 
@@ -94,6 +94,11 @@ color: var(--type-color-white);
 margin:20px;
 
 
+}
+
+.line-height{
+
+    line-height: 40px;
 }
 
 .row_impetus {
