@@ -14,16 +14,7 @@
 }
 
 
-body span {
-
-
-    font-family: 'Montserrat';
-    margin: 0px;
-
-}
-
-
-.container {
+.container-impetus {
     position: relative;
     display: flex;
     justify-content: center;
@@ -36,7 +27,7 @@ body span {
 
 }
 
-.container video {
+.container-impetus video {
     overflow: hidden;
 
     position: absolute;
@@ -51,7 +42,7 @@ body span {
     box-sizing: border-box;
 }
 
-.container img,
+.container-impetus img,
 picture {
     position: absolute;
     min-width: 1625px;
@@ -73,7 +64,7 @@ picture {
 
 }
 
-.title {
+.title-impetus {
 
     display: flex;
     justify-content: center;
@@ -95,7 +86,7 @@ picture {
 
 }
 
-.subtitle {
+.subtitle-impetus {
 
     display: flex;
     justify-content: center;
@@ -116,6 +107,7 @@ picture {
     gap: 15px;
     color: var(--type-color-white);
     margin: 20px;
+    line-height: 30px;
 
 
 }
@@ -137,7 +129,7 @@ picture {
     justify-content: end;
 }
 
-.row {
+.row-impetus {
     margin-top: 35px;
     display: flex;
     gap: 20px;
@@ -146,7 +138,7 @@ picture {
     justify-content: center;
 }
 
-.btn {
+.btn-impetus {
     padding-left: 30px;
     padding-right: 30px;
     display: flex;
@@ -158,7 +150,7 @@ picture {
     border: 1.1px solid #fff;
 }
 
-.btn_secondary {
+.btn-impetus_secondary {
     padding-left: 30px;
     padding-right: 30px;
     display: flex;
@@ -171,14 +163,14 @@ picture {
 }
 
 
-.btn:hover {
+.btn-impetus:hover {
 
     background-color: var(--third-color);
     color: var(--secondary-color);
 
 }
 
-.btn_secondary:hover {
+.btn-impetus_secondary:hover {
 
     background-color: var(--third-color);
     color: var(--secondary-color);
@@ -186,13 +178,13 @@ picture {
 }
 
 
-.description {
+.description-impetus {
 
     text-align: center;
 
 }
 
-.description_secondary {
+.description-impetus_secondary {
 
     text-align: center;
     color: var(--secondary-color);
@@ -218,7 +210,7 @@ picture {
 
 @media (max-width:480px) {
 
-    .container img,
+    .container-impetus img,
     picture {
         position: absolute;
         min-width: 430px;
@@ -251,12 +243,12 @@ picture {
         align-items: end;
     }
 
-    .title {
+    .title-impetus {
 
         font-size: var(--mobile-view-font-title-size);
     }
 
-    .subtitle {
+    .subtitle-impetus {
 
         font-size: var(--mobile-view-font-subtitle-size);
 
@@ -264,7 +256,7 @@ picture {
 
 
 
-    .row {
+    .row-impetus {
         margin-top: 40px;
         gap: 15px;
         flex-direction: column;
@@ -280,7 +272,7 @@ picture {
         ;
     }
 
-    .btn {
+    .btn-impetus {
 
         height: 60px;
         padding-left: 50px;
