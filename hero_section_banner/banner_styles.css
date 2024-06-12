@@ -4,8 +4,11 @@
 --secondary-color:gray;
 --third-color:white;
 --font-size:clamp(14px, 20vh , 55px);
+--mobile-view-font-title-size:50px;
+--mobile-view-font-subtitle-size:30px;
 --subtitle-size:clamp(12px, 12vh , 40px);
 --type-color-white: white;
+
 
 
 }
@@ -21,7 +24,7 @@ margin: 0px;
 
 
 .container {
-    position: relative;
+position: relative;
 display: flex;
 justify-content: center;
 
@@ -46,6 +49,13 @@ box-sizing: border-box;
   
  
     box-sizing: border-box;
+}
+.container img , picture {
+position: absolute;
+min-width: 1625px;
+width:100%;
+min-height: 800px;
+
 }
 
 .flex {
@@ -108,6 +118,18 @@ margin:20px;
 
 }
 
+
+.to-right {
+align-items: end;
+margin-right: 10%;
+
+}
+
+.justify-end {
+
+    justify-content: end;
+}
+
 .row {
 margin-top: 35px;   
 display: flex;
@@ -129,6 +151,18 @@ justify-content: center;
     border: 1.1px solid #fff;
 }
 
+.btn_secondary {
+    padding-left:30px;
+    padding-right:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 55px;
+    border-radius: 45.76px;
+    background-color: rgb(255, 255, 255);
+    border: 1.1px solid #fff;
+}
+
 
 .btn:hover  {
 
@@ -137,6 +171,13 @@ color: var(--secondary-color);
 
 }
 
+.btn_secondary:hover  {
+
+    background-color: var(--third-color);
+    color: var(--secondary-color);
+    
+    }
+
 
 .description {
 
@@ -144,6 +185,12 @@ text-align: center;
 
 }
 
+.description_secondary {
+
+    text-align: center;
+    color: var(--secondary-color);
+    
+    }
 
 @keyframes appear {
 
@@ -164,8 +211,54 @@ text-align: center;
 
 @media (max-width:480px) {
 
+    .container img ,  picture {
+        position: absolute;
+        min-width: 430px;
+        width:100%;
+        min-height: 568px;
+        
+        }
+
+
+        .img-desktop {
+
+            display: none;
+        }
+
+
+
+
+
+
+
+
+    .to-right {
+        align-items: center;
+        margin-right: 0%;
+        
+        }
+        
+        .justify-end {
+        
+            justify-content: center;
+            align-items: start;
+        }
+
+    .title {
+
+        font-size: var(--mobile-view-font-title-size);
+    }
+
+    .subtitle {
+
+font-size: var(--mobile-view-font-subtitle-size);
+
+    }
+
+
+
 .row {
-    margin-top:125px;
+    margin-top:40px;
     gap: 30px;
     flex-direction: column;
 }
@@ -173,11 +266,14 @@ text-align: center;
 .text-structure {
 
     min-width: 320px;
+    margin-top: 30%;
+    margin-left: 0%;
+    margin-right: 0%;;
 }
 
 .btn {
 
-    height: 85px;
+    height: 60px;
     padding-left:50px;
     padding-right:50px;
 }
