@@ -9,6 +9,7 @@
     --subtitle-size: clamp(12px, 12vh, 40px);
     --type-color-white: white;
     --type-color-white-hover: rgba(255, 255, 255, 0.595);
+    font-family: 'Montserrat';
 
 
 
@@ -99,6 +100,19 @@ picture {
 
 }
 
+.title-impetus-scandinavia {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: var(--font-size);
+    font-weight: 600;
+    text-align: end;
+    line-height: 92%;
+
+}
+
 .appear {
 
     animation-name: appear;
@@ -113,10 +127,12 @@ picture {
 
     display: flex;
     justify-content: center;
-    text-align: center;
+    text-align: end;
+    line-height: 92%;
     opacity: 0%;
     animation-delay: 0.5s;
     font-size: var(--subtitle-size);
+    margin-top: 2%;
 
 }
 
@@ -318,6 +334,11 @@ picture {
     }
 
     .title-impetus {
+
+        font-size: var(--mobile-view-font-title-size);
+    }
+
+    .title-impetus-scandinavia {
 
         font-size: var(--mobile-view-font-title-size);
     }
