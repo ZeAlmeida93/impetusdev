@@ -15,6 +15,35 @@
 
 }
 
+a {
+
+    text-decoration: none;
+}
+
+.contentTitles_subtitle {
+    font-family: 'Montserrat';
+    font-size: 32px;
+    line-height: 58px;
+    color: #272727;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    padding: 0 10%;
+  }
+  
+  .contentTitles_button {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: medium;
+    line-height: 32px;
+    text-transform: capitalize;
+    color: #494949;
+    padding: 12px 34px 11px !important;
+    border: 0px solid #000;
+    background: white;
+    letter-spacing: 0.02pt;
+    border-radius: 45px;
+  }
+  
 
 .container-impetus {
     position: relative;
@@ -151,6 +180,7 @@ picture {
 
 }
 
+
 .text-structure-ss24 {
 
     display: flex;
@@ -188,9 +218,21 @@ picture {
 
 }
 
+.to-center {
+
+align-items: center;
+
+}
+
 .justify-end {
 
     justify-content: end;
+}
+
+.justify-center {
+
+justify-content: center;
+
 }
 
 .justify-end-ss24 {
@@ -205,6 +247,40 @@ picture {
     opacity: 0%;
     animation-delay: 1s;
     justify-content: center;
+}
+
+.row-impetus-2 {
+    width: 100%;
+    margin-top: 35px;
+    display: flex;
+    gap: 20%;
+    opacity: 0%;
+    animation-delay: 1s;
+    justify-content: center;
+}
+
+.margin-top-220 {
+
+    margin-top: 220px;
+    }
+
+
+.margin-top-100 {
+
+    margin-top: 100px;
+    }
+    
+    
+.btn-group{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.space-between{
+
+    justify-content: space-between;
 }
 
 .btn-impetus {
@@ -229,8 +305,16 @@ picture {
     border-radius: 45.76px;
     background-color: rgb(255, 255, 255);
     border: 1.1px solid #fff;
+    color: var(--secondary-color);
 }
 
+.btn-description {
+    display:flex;
+text-align: center;
+font-size: medium;
+
+
+}
 
 .btn-impetus:hover {
 
@@ -239,12 +323,6 @@ picture {
 
 }
 
-.btn-impetus_secondary:hover {
-
-    background-color: var(--third-color);
-    color: var(--secondary-color);
-
-}
 
 
 .description-impetus {
@@ -255,10 +333,28 @@ picture {
 
 .description-impetus_secondary {
 
+  
     text-align: center;
-    color: var(--secondary-color);
+  
+    font-size: medium;
+    font-weight: 500;
+   
 
 }
+
+.btn-impetus_secondary:hover {
+
+    background-color: var(--type-color-white-hover);
+    color: var(--third-color);
+
+}
+
+
+.height-banner-500 {
+
+    height: 500px;
+}
+
 
 @keyframes appear {
 
@@ -346,6 +442,7 @@ picture {
     .subtitle-impetus {
 
         font-size: var(--mobile-view-font-subtitle-size);
+        text-align: center;
 
     }
 
@@ -388,4 +485,39 @@ picture {
         padding-right: 50px;
     }
 
+    .max-height-mobile-pv {
+
+        max-height: 730px;
+    }
+
+    .line-height-title-mobile {
+
+        line-height: 50px;
+    }
+
+    .column-mobile {
+flex-direction: column;
+margin-top:60px;
+width:60%;
+gap: 30px;
+
+    }
+
+    .btn-group {
+        display: flex;
+        align-items: center;
+        gap:10px;
+    }
+
+
+    .full-viewport-height {
+
+        height: 100vh;
+   
+    }
+
+    .no-margin-top {
+
+        margin: 0px;
+    }
 }
