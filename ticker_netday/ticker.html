@@ -7,7 +7,7 @@
   <title>Ticker-Scandinavia</title>
 
   <link rel="stylesheet"
-    href="/hero_section_banner/New Redicom Code/WholeSale_Scandinavia/banner_styles_redicom-scandinavia.css">
+    href="/hero_section_banner/NewRedicomCode/banner_styles_redicom.css">
 </head>
 
 <body>
@@ -273,6 +273,8 @@
 
 
   <script>
+
+    /*
     $(document).ready(function () {
       function ticker() {
         var tickerElement = $('ul.ticker');
@@ -288,7 +290,42 @@
         });
       }
       ticker();
-    });
+    }); */
+
+    $(document).ready(function () {
+    function ticker() {
+      var tickerElement = $('ul.ticker');
+      var listItemWidth = tickerElement.find('li').first().outerWidth(true); // Width of one list item including margin
+      var animation;
+
+      function startTicker() {
+        animation = tickerElement.animate({
+          marginLeft: -listItemWidth
+        }, 6000, 'linear', function () {
+          tickerElement.css({
+            marginLeft: 0
+          }).find('li:first').appendTo(tickerElement);
+          startTicker();
+        });
+      }
+
+      tickerElement.find('li').hover(
+        function () {
+          // On mouse enter, stop the animation
+          tickerElement.stop(true);
+        },
+        function () {
+          // On mouse leave, resume the animation
+          startTicker();
+        }
+      );
+
+      startTicker();
+    }
+
+    ticker();
+  });
+    
   </script>
 
 </body>
